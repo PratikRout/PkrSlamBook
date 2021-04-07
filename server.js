@@ -15,7 +15,7 @@ app.get('/', (req,res) => {
   res.send('Hello to Memories API');
 });
 
-const DATABASE_ACCESS = 'mongodb+srv://pathikdas45:Pathikdas!3@cluster0.2nisg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const DATABASE_ACCESS = 'mongodb+srv://pathikdas45:<Password>@cluster0.2nisg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const PORT = process.env.PORT|| 4000;
 
 mongoose.connect(DATABASE_ACCESS, { useNewUrlParser: true, useUnifiedTopology: true })
