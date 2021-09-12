@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const signUpTemplateCopy = require('../models/SignUpModels')
+const slambookTemplateCopy = require('../models/SlambookModels')
 
 router.post('/signup', (request, response) =>{
 
-    const signedUpUser = new signUpTemplateCopy({
+    const signedUpUser = new slambookTemplateCopy({
         q1:request.body.q1,
         q2:request.body.q2,
         q3:request.body.q3,
