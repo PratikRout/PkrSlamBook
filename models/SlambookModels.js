@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const signUpTemplate = new mongoose.Schema({
+const slambookTemplate = new mongoose.Schema({
     q1:{
         type:String,
         required:true
@@ -31,4 +31,4 @@ const signUpTemplate = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('mytable', signUpTemplate)
+module.exports = mongoose.model('mytable', slambookTemplate)
